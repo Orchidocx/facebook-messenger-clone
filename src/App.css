@@ -1,3 +1,14 @@
 .App {
   text-align: center;
 }
+
+.app__form {
+  background-color: #e9e9eb;
+  padding: 20px;
+  margin: 20px;
+  position: fixed;
+  bottom: 0;
+  flex-direction: row;
+  width: 100%;
+  z-index: 1;
+}
