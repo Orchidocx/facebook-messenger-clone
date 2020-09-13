@@ -1,4 +1,5 @@
 import firebase from 'firebase';
+
 const firebaseApp = firebase.initializeApp({
   apiKey: "AIzaSyDa7WQwC5-57spMz5pKTHhMi9p53wKgBx0",
   authDomain: "facebook-messenger-clone-7b5d2.firebaseapp.com",
