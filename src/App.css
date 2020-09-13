@@ -9,6 +9,20 @@
   position: fixed;
   bottom: 0;
   flex-direction: row;
-  width: 100%;
+  width: 90%;
   z-index: 1;
 }
+
+.app__formControl {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.app__input {
+  flex: 1;
+}
+
+.app__iconButton {
+  flex: 0;
+}
+
