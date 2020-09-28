@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.App > img {
+  margin-top: 20px;
+}
+
 .app__form {
   background-color: #e9e9eb;
   padding: 20px;
