@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FormControl, Input, IconButton } from "@material-ui/core";
 import "./App.css";
 import Message from "./Message";
@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     db.collection("messages")
-      .orderBy("timestamp", "desc")
+      .orderBy("timestamp", "asc")
       .onSnapshot((snapshot) => {
         setMessages(
           snapshot.docs.map((doc) => ({ id: doc.id, message: doc.data() }))
@@ -36,6 +36,12 @@ function App() {
     setInput("");
     localStorage.setItem("fbmUser1", username);
   };
+
+  // const messagesEndRef = useRef(null);
+  // const scrollToBottom = () => {
+  //   messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+  // };
+  // useEffect(scrollToBottom, [messages]);
 
   return (
     <div className="App">
