@@ -8,6 +8,8 @@ function Message({ message, username }) {
   const scrollToBottom = () => {
     messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
   };
+  const timestamp =
+    message.timestamp?.toDate()?.toString().substring(4, 21) || "now";
   useEffect(scrollToBottom, [message]);
   return (
     <div
@@ -20,9 +22,7 @@ function Message({ message, username }) {
             {!isUser && `${message.username || "Unknown User"}: `}
             {message.message}
           </Typography>
-          <span className="message__tooltip">
-            {message.timestamp?.toDate()?.toString() || "now"}
-          </span>
+          <span className="message__timestamp">{timestamp}</span>
         </CardContent>
       </Card>
     </div>
