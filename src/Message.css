@@ -15,5 +15,6 @@
 }
 
 .message__guestCard {
+  text-align: left;
   background-color: #e9e9eb !important;
 }

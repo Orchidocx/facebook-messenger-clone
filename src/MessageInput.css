@@ -1,0 +1,23 @@
+.messageInput {
+  background-color: #e9e9eb;
+  padding: 20px;
+  margin: 20px;
+  position: fixed;
+  bottom: 0;
+  flex-direction: row;
+  width: 90%;
+  z-index: 1;
+}
+
+.messageInput__formControl {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.messageInput__input {
+  flex: 1;
+}
+
+.messageInput__iconButton {
+  flex: 0;
+}

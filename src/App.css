@@ -1,31 +1,4 @@
-.App {
+.app {
   text-align: center;
-}
-
-.App > img {
-  margin-top: 20px;
-}
-
-.app__form {
-  background-color: #e9e9eb;
-  padding: 20px;
-  margin: 20px;
-  position: fixed;
-  bottom: 0;
-  flex-direction: row;
-  width: 90%;
-  z-index: 1;
-}
-
-.app__formControl {
-  display: flex !important;
-  flex-direction: row !important;
-}
-
-.app__input {
-  flex: 1;
-}
-
-.app__iconButton {
-  flex: 0;
+  height: 100vh;
 }
