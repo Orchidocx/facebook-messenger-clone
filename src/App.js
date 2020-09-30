@@ -1,8 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
-import Message from "./Message";
 import { db } from "./firebase";
-import FlipMove from "react-flip-move";
 import Header from "./Header";
 import MessageInput from "./MessageInput";
 import MessageList from "./MessageList";
